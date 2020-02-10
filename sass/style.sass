@@ -1,0 +1,126 @@
+*
+	font-family: 'Museo Sans', sans-serif
+
+.container
+	width: 920px
+	margin: 0 auto
+
+
+@import "_variables/variables"
+@import "mixins"
+@import "_blocks/_promo"
+@import "media"
+
+.container	
+	.div_head
+		display: flex
+		justify-content: space-between
+
+.div_head_oficial
+	margin-left: 127px
+	text-align: center
+	color: #ffffff
+	font-size: 12px
+	font-weight: 400
+	span
+		width: 180px
+		color: #ffffff
+		display: block	
+		font-size: 18px
+		font-weight: 400	
+
+
+.div_head_call_us	
+	margin-left: 210px
+	a
+		color: #ffffff
+		display: block
+		font-size: 18px
+		font-weight: 400	
+	button
+		+red_btn
+		font-size: 12px
+		margin-left: 5px
+		width: 150px
+		height: 30px
+		font-weight: 400
+
+h1 
+	margin-top: 99px
+	margin-bottom: 17px
+	text-align: right
+	font-size: 42px
+	color: #ffffff
+	font-weight: 400
+	text-transform: uppercase
+h2 	
+	text-align: right
+	color: #ffffff
+	font-size: 24px
+	font-weight: 400
+	text-transform: uppercase
+
+.promo
+	.icons
+		margin-left: 460px
+		margin-top: 66px
+		display: flex
+		.time
+			+img_center
+		.deliv
+			+img_center
+		.mess
+			+img_center		
+	&_consult
+		color: #ffffff
+		float: right
+		margin-bottom: 30px
+		&_btn
+			+red_btn
+			width: 300px
+			height: 50px
+			display: block
+			font-size: 16px
+			font-weight: 400
+			text-transform: uppercase
+			margin-top: 68px
+		span
+			color: #fff
+			float: right	
+			a
+				color: #fff
+
+.prev
+	&_title
+		color: #0d0d0d
+		font-size: 30px
+		font-weight: 400
+		text-align: center
+	&_icons
+		margin-top: 65px
+		display: flex	
+		justify-content: space-between
+		.exp
+			display: block
+			img
+				display: block
+				margin: 0 auto
+		&_title
+			margin-top: 38px
+			text-align: center	
+			color: #0d0d0d
+			font-size: 18px
+			font-weight: 400
+		&_text
+			width: 240px
+			text-align: center	
+			font-size: 14px
+			font-weight: 400
+			a
+				color: #ff0000
+
+
+
+
+
+
