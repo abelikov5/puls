@@ -40,28 +40,82 @@
         min-height: 440px 
         border: 1px solid #e8e8e8
         text-align: center 
-        img
-            display: block
-            margin: 0 auto
-            height: 180px
-            width: auto
-        &_title
-            margin-top: 20px
-            color: #0d0d0d
-            font-size: 16px
-            font-weight: 700
-            text-transform: uppercase   
-        &_desr
-            margin-top: 16px
-            color: #0d0d0d
-            font-size: 14px
-            font-weight: 400
+        overflow: hidden
+        &_wrap
+            display: flex
+            width: calc(200% + 40px)
+            &_top
+                transform: translateX(calc(-100% - 20px))
+                margin-right: 20px
+                width: 50%
+                img
+                    display: block
+                    margin: 0 auto
+                    height: 180px
+                    width: auto
+                &_title
+                    margin-top: 20px
+                    color: #0d0d0d
+                    font-size: 16px
+                    font-weight: 700
+                    text-transform: uppercase   
+                &_desr
+                    margin-top: 16px
+                    color: #0d0d0d
+                    font-size: 14px
+                    font-weight: 400
+            .cards_active       
+                transform: translateX(0%)
+  
+    
+            &_back
+                position: relative
+                width: 50%
+                margin-left: 20px
+                transform: translateX(0%)
+                ul  
+                    position: relative
+                    padding: 0
+                    li
+                        padding-left: 10px
+                        position: relative
+                        margin-bottom: 18px
+                        list-style-type: none
+                        color: #555555
+                        font-size: 14px
+                        font-weight: 300
+                        text-align: left
+                    li::before
+                        content: ''
+                        position: absolute
+                        width: 5px
+                        height: 5px
+                        background-color: red
+                        left: -5px
+                        top: 7px
+                button
+                    position: absolute
+                    color: #c70101
+                    font-size: 14px
+                    font-weight: 500
+                    text-decoration: underline  
+                    bottom: 0 
+                    right: 50%   
+                    transform: translateX(50%)
+
+
+
+
+                
+
         &_more
             margin-top: 17px
             color: #c70101
             font-size: 14px
             font-weight: 400
             text-decoration: underline
+            border: none
+            background-color: #ffffff
         hr
             margin-top: 17px    
         &_footer
@@ -80,9 +134,15 @@
             button
                 +red_btn    
                 width: 131px
-                height: 40px
+                height: 40px      
 
-
+                    
+.catalog 
+    .cards
+        &_wrap 
+            .cards_active       
+                transform: translateX(calc(-100% - 20px))  
+                margin-left: 0px    
 
 
 
