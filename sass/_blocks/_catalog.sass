@@ -1,0 +1,91 @@
+.catalog
+    min-height: 1100px
+    padding: 50px 0 103px 0
+    h2 
+        text-align: center
+        color: #0d0d0d
+        font-size: 30px
+        font-weight: 400
+        text-transform: uppercase
+        margin: 0
+    .catalog_list
+        display: flex
+        justify-content: center
+        margin: 0
+        li
+            border: 1px solid
+            width: 220px
+            line-height: 48px
+            text-align: center
+            list-style: none
+            font-size: 18px
+            font-weight: 400
+            text-transform: uppercase
+            transform: skewX(25deg)
+            margin: 0 5px
+            cursor: pointer
+            transform: 0.5 all
+            &:hover
+                box-shadow: 3px 3px 20px red
+                border: none
+            div
+                transform: skewX(-25deg)
+        .active_tab
+            background-color: #c70101
+            color: #ffffff
+            border: none
+    .cards
+        padding: 20px
+        width: 300px
+        min-height: 440px 
+        border: 1px solid #e8e8e8
+        text-align: center 
+        img
+            display: block
+            margin: 0 auto
+            height: 180px
+            width: auto
+        &_title
+            margin-top: 20px
+            color: #0d0d0d
+            font-size: 16px
+            font-weight: 700
+            text-transform: uppercase   
+        &_desr
+            margin-top: 16px
+            color: #0d0d0d
+            font-size: 14px
+            font-weight: 400
+        &_more
+            margin-top: 17px
+            color: #c70101
+            font-size: 14px
+            font-weight: 400
+            text-decoration: underline
+        hr
+            margin-top: 17px    
+        &_footer
+            margin-top: 17px
+            display: flex
+            justify-content: space-around
+            &_price_old
+                color: #555555
+                font-size: 14px
+                font-weight: 400
+                text-decoration: line-through
+            &_price_new   
+                color: #050505
+                font-size: 20px
+                font-weight: 400 
+            button
+                +red_btn    
+                width: 131px
+                height: 40px
+
+
+
+
+
+
+
+
