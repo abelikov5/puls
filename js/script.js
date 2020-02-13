@@ -14,4 +14,36 @@ $(document).ready(function(){
           ]
 
     });
+    $('.cards_more').each(function(i) {
+      $(this).on('click', function(e) {
+        e.preventDefault();
+        $('.cards_wrap_top').eq(i).toggleClass('cards_active_top');
+        $('.cards_wrap_back').eq(i).toggleClass('cards_active_back');
+      });
+    });
+    $('.cards_back').each(function(i) {
+      $(this).on('click', function(e) {
+        e.preventDefault();
+        $('.cards_wrap_top').eq(i).toggleClass('cards_active_top');
+        $('.cards_wrap_back').eq(i).toggleClass('cards_active_back');
+      });
+    });
+
+    $('.catalog_list_fitness').each(function(i) {
+      $(this).on('click', function(e) {
+        e.preventDefault();
+        $('.catalog_list_fitness').toggleClass('active_tab');
+        $('.catalog_list_run').toggleClass('active_tab');
+        $('.catalog_list_triatlon').toggleClass('active_tab');
+      });
+    });
+    // $('.cards_back').each(function(i) {
+    //   $(this).on('click', function(e) {
+    //     e.preventDefault();
+    //     $('.cards_wrap_top').eq(i).toggleClass('cards_active_top');
+    //     $('.cards_wrap_back').eq(i).toggleClass('cards_active_back');
+    //   });
+    // });
+
+
 });

@@ -1,5 +1,5 @@
 .catalog
-    min-height: 1100px
+    min-height: 500px
     padding: 50px 0 103px 0
     h2 
         text-align: center
@@ -34,7 +34,14 @@
             background-color: #c70101
             color: #ffffff
             border: none
+    .catalog_cards_wrap
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+
+                
     .cards
+        margin-top: 20px
         padding: 20px
         width: 300px
         min-height: 440px 
@@ -48,6 +55,8 @@
                 transform: translateX(calc(-100% - 20px))
                 margin-right: 20px
                 width: 50%
+            .cards_active_top
+                transform: translateX(0%)
                 img
                     display: block
                     margin: 0 auto
@@ -63,11 +72,7 @@
                     margin-top: 16px
                     color: #0d0d0d
                     font-size: 14px
-                    font-weight: 400
-            .cards_active       
-                transform: translateX(0%)
-  
-    
+                    font-weight: 400   
             &_back
                 position: relative
                 width: 50%
@@ -99,14 +104,14 @@
                     font-size: 14px
                     font-weight: 500
                     text-decoration: underline  
-                    bottom: 0 
+                    bottom: 0px 
                     right: 50%   
                     transform: translateX(50%)
-
-
-
-
-                
+                    border: none
+                    background-color: #ffffff
+            .cards_active_back
+                transform: translateX(calc(-100% - 40px))        
+   
 
         &_more
             margin-top: 17px
@@ -117,7 +122,7 @@
             border: none
             background-color: #ffffff
         hr
-            margin-top: 17px    
+            margin-top: 30px    
         &_footer
             margin-top: 17px
             display: flex
@@ -134,14 +139,7 @@
             button
                 +red_btn    
                 width: 131px
-                height: 40px      
-
-                    
-.catalog 
-    .cards
-        &_wrap 
-            .cards_active       
-                transform: translateX(calc(-100% - 20px))  
+                height: 40px                
                 margin-left: 0px    
 
 
