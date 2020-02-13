@@ -51,17 +51,18 @@
         &_wrap
             display: flex
             width: calc(200% + 40px)
+
             &_top
                 transform: translateX(calc(-100% - 20px))
                 margin-right: 20px
                 width: 50%
-            .cards_active_top
-                transform: translateX(0%)
-                img
-                    display: block
-                    margin: 0 auto
+                &_img
                     height: 180px
-                    width: auto
+                    img
+                        display: block
+                        margin: 0 auto
+                        height: 180px
+                        width: auto
                 &_title
                     margin-top: 20px
                     color: #0d0d0d
@@ -73,6 +74,9 @@
                     color: #0d0d0d
                     font-size: 14px
                     font-weight: 400   
+            .cards_active_top
+                transform: translateX(0%)   
+
             &_back
                 position: relative
                 width: 50%
