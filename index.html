@@ -14,6 +14,7 @@
 <body>
 	<section class="overlay">
 		<div class="overlay_consult">
+			<div class="overlay_close_win">&times;</div>
 			<div class="overlay_consult_wrap">
 				<div class="overlay_consult_wrap_title">
 					Просто заполните форму заявки
@@ -28,10 +29,41 @@
 	
 					<button>заказать кОНСУЛЬТАЦИЮ</button>
 				</form>
+			</div>		
+		</div>
+
+		<div class="overlay_order">
+				<div class="overlay_close_win">&times;</div>
+				<div class="overlay_order_wrap">
+					<div class="overlay_order_wrap_title">
+						Ваш заказ:
+					</div>
+					<div class="overlay_order_wrap_subtitle">
+							Пульсометр Polar FT1
+					</div>
+					<form action="#" class="overlay_order_wrap_form">
+						<input required placeholder="Введите имя" type="text">
+						<input required placeholder="Ваш телефон" type="number">
+						<input required placeholder="Ваш E-mail" type="email">
+		
+						<button>купить</button>
+					</form>
+				</div>
 			</div>
 
-			
-		</div>
+			<div class="overlay_thanks">
+					<div class="overlay_close_win">&times;</div>
+					<div class="overlay_thanks_wrap">
+						<div class="overlay_thanks_wrap_title">
+								Спасибо за вашу заявку!
+						</div>
+						<div class="overlay_thanks_wrap_subtitle">
+								Наш менеджер свяжется с вами 
+в ближайшее время!
+						</div>
+					</div>
+				</div>
+
 		
 	</section>
 	<section class="promo">
@@ -46,7 +78,7 @@
 				</div>
 				<div class="div_head_call_us">
 					<a href="tel:+74999228974" class="tel_contact">+7 (499) 922-89-74</a>
-					<button class="red_btn">заказать звонок</button>
+					<button data-modal="consult" class="red_btn">заказать звонок</button>
 				</div>
 			</div>
 			<h1>Подбор пульсометра</h1>
@@ -73,7 +105,7 @@
 				</div>
 			</div>
 			<div class="promo_consult">
-				<button class="promo_consult_btn">заказать кОНСУЛЬТАЦИЮ</button>
+				<button data-modal="consult" class="promo_consult_btn">заказать кОНСУЛЬТАЦИЮ</button>
 				<span>или <a href="#">ПЕРЕЙТИ В КАТАЛОГ</a></span>
 			</div>
 		</div>

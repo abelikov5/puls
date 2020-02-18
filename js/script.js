@@ -70,4 +70,13 @@ $(document).ready(function(){
         }
       }
     });
+
+    // MODULE WIN
+    $('[data-modal=consult]').on('click', function() {
+      $('.overlay, .overlay_consult').fadeIn();
+    });
+    $('.overlay_close_win').on('click', function() {
+      $('.overlay').fadeOut();
+    });
+
 });
