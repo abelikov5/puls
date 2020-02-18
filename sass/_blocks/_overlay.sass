@@ -1,0 +1,46 @@
+.overlay
+    // display: none
+    position: absolute
+    width: 100%
+    height: 100vh
+    background-color:  rgba(0, 0, 0, 0.56)
+    z-index: 999
+    &_consult
+        position: absolute
+        width: 380px
+        height: 400px
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        background-color: #f2f2f2;
+        &_wrap
+            padding: 40px 0 40px
+            width: 300px
+            position: block
+            margin: 0 auto
+            &_title
+                text-align: center
+                color: #0d0d0d
+                font-size: 19px
+                font-weight: 400
+            &_subtitle
+                text-align: center
+                color: #0d0d0d
+                font-size: 14px
+                font-weight: 400    
+            &_form
+                margin-top: 25px
+                display: flex
+                flex-direction: column
+                input 
+                    +feed_form
+                    color: #4b4b4b
+                    font-size: 14px
+                    font-weight: 400
+                button
+                    margin-top: 10px    
+                    width: 100%
+                    background-color: red
+                    width: 100%
+                    height: 55px
+                    +red_btn
