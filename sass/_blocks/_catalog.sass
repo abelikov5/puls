@@ -34,12 +34,24 @@
             background-color: #c70101
             color: #ffffff
             border: none
-    .catalog_cards_wrap
-        display: flex
-        justify-content: space-between
-        flex-wrap: wrap
+    &_cards_wrap
+        display: none
+    
+    &_cards_run
+        display: none
 
+    &_cards_triatlon
+        display: none
+
+    .container  
+        .active_section_catalog
+            display: flex
+            justify-content: space-between
+            flex-wrap: wrap
+        .hide_section
+            display: none      
                 
+
     .cards
         margin-top: 20px
         padding: 20px
@@ -145,6 +157,7 @@
                 width: 131px
                 height: 40px                
                 margin-left: 0px    
+
 
 
 

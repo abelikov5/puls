@@ -36,11 +36,15 @@ $(document).ready(function(){
       if($('.catalog_list_fitness').hasClass('active_tab')) {}
       else {
         $('.catalog_list_fitness').toggleClass('active_tab');
+        $('.catalog_cards_wrap').toggleClass('active_section_catalog');
+
         if($('.catalog_list_run').hasClass('active_tab')) {
           $('.catalog_list_run').toggleClass('active_tab'); 
+          $('.catalog_cards_run').toggleClass('active_section_catalog');
         }
         else {
           $('.catalog_list_triatlon').toggleClass('active_tab'); 
+          $('.catalog_cards_triatlon').toggleClass('active_section_catalog');
         }
       }
     });
@@ -49,11 +53,14 @@ $(document).ready(function(){
       if($('.catalog_list_run').hasClass('active_tab')) {}
       else {
         $('.catalog_list_run').toggleClass('active_tab');
+        $('.catalog_cards_run').toggleClass('active_section_catalog');
         if($('.catalog_list_fitness').hasClass('active_tab')) {
           $('.catalog_list_fitness').toggleClass('active_tab'); 
+          $('.catalog_cards_wrap').toggleClass('active_section_catalog');
         }
         else {
           $('.catalog_list_triatlon').toggleClass('active_tab'); 
+          $('.catalog_cards_triatlon').toggleClass('active_section_catalog');
         }
       }
     });
@@ -62,16 +69,20 @@ $(document).ready(function(){
       if($('.catalog_list_triatlon').hasClass('active_tab')) {}
       else {
         $('.catalog_list_triatlon').toggleClass('active_tab');
+        $('.catalog_cards_triatlon').toggleClass('active_section_catalog');
         if($('.catalog_list_run').hasClass('active_tab')) {
           $('.catalog_list_run').toggleClass('active_tab'); 
+          $('.catalog_cards_run').toggleClass('active_section_catalog');
+
         }
         else {
           $('.catalog_list_fitness').toggleClass('active_tab'); 
+          $('.catalog_cards_wrap').toggleClass('active_section_catalog');
         }
       }
     });
 
-    // MODULE WIN
+    // MODULE windows for order/consultation/callback/
     $('[data-modal=consult]').on('click', function() {
       $('.overlay, .overlay_consult').fadeIn();
     });
