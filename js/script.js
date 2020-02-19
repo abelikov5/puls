@@ -90,4 +90,11 @@ $(document).ready(function(){
       $('.overlay').fadeOut();
     });
 
+    $('[data-modal=order]').on('click', function() {
+      $('.overlay, .overlay_order').fadeIn();
+    });
+    $('.overlay_close_win').on('click', function() {
+      $('.overlay').fadeOut();
+    });
+
 });
