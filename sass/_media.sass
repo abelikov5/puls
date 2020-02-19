@@ -10,6 +10,15 @@
             .slider_wrap
                 width: 600px
 
+@media (max-width: 939px)
+    .catalog
+        .container
+            .active_section_catalog
+                justify-content: center
+            .cards
+                margin: 10px 10px    
+              
+
 
 @media (max-width: 800px)
     .prev
@@ -81,7 +90,29 @@
     .slider
         .container
             .slider_wrap
-                width: 400px                 
+                width: 400px  
+    .catalog
+        .container
+            .catalog_list   
+                li
+                    line-height: 30px
+                    font-size: 12px
+    .feedback
+        display: none   
+    .footer
+        &_info
+            width: 350px
+            height: 200px
+            address
+                margin-top: 20px
+            a
+                margin-top: 15px
+        &_social
+            margin-top: 15px        
+
+
+
+
 
 
 @media (max-width: 440px)
@@ -150,7 +181,32 @@
         padding-top: 40px
         .container
             .slider_wrap
-                width: 280px        
+                width: 280px 
+    .catalog
+        h2 
+            font-size: 20px
+            line-height: 30px
+            margin-bottom: 15px
+        .container
+            .catalog_list  
+                padding: 0 
+                li
+                    line-height: 30px
+                    font-size: 9px  
+            .cards_footer_price_new
+                font-size: 18px
+
+    .footer
+        &_info
+            width: 300px
+            height: 170px
+            address
+                margin-top: 20px
+                font-size: 16px
+            a
+                margin-top: 15px
+        &_social
+            margin-top: 0px                                        
 
 
 
