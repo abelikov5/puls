@@ -97,4 +97,9 @@ $(document).ready(function(){
       $('.overlay').fadeOut();
     });
 
+    //input mask phone
+    $("#phone").mask("+7(999) 999-99-99");
+    $("#phone_form").mask("+7(999) 999-99-99");
+    $("#phone_buy").mask("+7(999) 999-99-99");
+
 });
